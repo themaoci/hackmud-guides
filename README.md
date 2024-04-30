@@ -1176,6 +1176,7 @@ These are scripts that might be helpful to you as you poke around the network.
   - `teach.me`
   - `teach_si_x80d.each_other`
 
+## Helpfull Links
 [01]: https://hackmud.com/
 [02]: https://hackmud.fandom.com/wiki/Glams
 [03]: https://hackmud.fandom.com/wiki/Loc

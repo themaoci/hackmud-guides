@@ -1,0 +1,57 @@
+{
+  "name": "hackmud",
+  "version": "2.0.0",
+  "description": "",
+  "main": "start.js",
+  "type": "module",
+  "engines": {
+    "node": ">=16.13.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/register": "^7.17.7",
+    "@types/mocha": "^9.1.0",
+    "babel-preset-minify": "^0.5.1",
+    "c8": "^7.11.3",
+    "chai": "^4.3.6",
+    "chalk": "^5.0.1",
+    "docdash": "^1.2.0",
+    "dotenv": "^16.0.1",
+    "eslint": "^8.18.0",
+    "eslint-plugin-import": "^2.26.0",
+    "inquirer": "^9.0.0",
+    "jsdoc": "^3.6.10",
+    "mocha": "^10.0.0",
+    "sinon": "^14.0.0",
+    "sinon-chai": "^3.7.0"
+  },
+  "eslintIgnore": [
+    ".coverage/",
+    ".DS_STORE",
+    ".env",
+    ".nyc_output",
+    "dist/",
+    "docs/",
+    "hackmud/",
+    "node_modules",
+    "offline/"
+  ],
+  "scripts": {
+    "coverage": "c8 npm run test",
+    "docs": "jsdoc -c .jsdocrc.json",
+    "prestart": "npm ci",
+    "start": "node ./start.js",
+    "lint": "eslint ./ --fix",
+    "prepublish": "rm -rf hackmud/**/scripts/* dist/*",
+    "publish": "node ./devops/publish",
+    "test": "mocha",
+    "test-watch": "mocha --watch --parallel"
+  },
+  "keywords": [
+    "hackmud"
+  ],
+  "author": "Levi Hackwith <levi.hackwith@gmail.com>",
+  "license": "CC BY-SA 3.0"
+}

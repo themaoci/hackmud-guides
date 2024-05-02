@@ -1,8 +1,6 @@
 // Harvest t1 loc's in under 500 symbols
 // Syntax: script {t: #s.some_corp.loc }
 // Use with targets from ada.fullsec { npc: true }
-// By nlight
-
 function z(c, a)
 {
 	var _ = (c, p) => { c.forEach(p) }, // loop utility method
